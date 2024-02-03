@@ -1,14 +1,14 @@
-import { useState, useEffect } from 'react'
+import React, { useState } from 'react';
+import CdList from './CdList';
 
 
-const App = () => {
-  
+export default function App() {
+  const [searchTerm, setSearchTerm] = useState('');
 
   return (
-    <>
-      <h1>App</h1>
-    </>
-  )
+    <div>
+     
+      <CdList searchTerm={searchTerm} />
+    </div>
+  );
 }
-
-export default App
